@@ -1,11 +1,14 @@
 const ingredients = ['Картошка', 'Грибы', 'Чеснок', 'Помидоры', 'Зелень', 'Приправы'];
 const ulEl = document.querySelector('#ingredients')
-const createListItem = ingredients => { 
-  ingredients.map(item => { 
+
+const createListItems = ingredients => { 
+  return ingredients.map(item => { 
     const listItem = document.createElement('li');
     listItem.textContent = item;
-    ulEl.appendChild(listItem);
+    return listItem
   })
+  
 }
 
-createListItem(ingredients)
+const ingredientsList = createListItems(ingredients)
+ulEl.append(...ingredientsList)

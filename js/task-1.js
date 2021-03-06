@@ -1,5 +1,5 @@
 const itemsEl = document.querySelectorAll('.item');
-const titlesEl = document.querySelectorAll('.h2');
+const titlesEl = document.querySelectorAll('h2');
 const itemListEl = document.querySelectorAll('.item > ul');
 
 console.log(`В списке ${itemsEl.length} категории.`);
